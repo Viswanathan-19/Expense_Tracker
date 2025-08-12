@@ -34,7 +34,7 @@ final List<Expense> _registeredExpenses=[
       body: Column(
         children: const [
           Text('The chart'),
-          Text('')
+        
         ],
       )
      );
