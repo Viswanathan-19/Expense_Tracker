@@ -23,6 +23,13 @@ class ExpenseItem extends StatelessWidget{
                 Text('\$${expense.amount.toStringAsFixed(2)}'),  //$ symbol to be displayed ,so uses escaping character \
                  //12.3433 => 12.34
                  const Spacer(),    //Creates a flexible space to insert into a [Flexible] widget.
+                 Row(
+                  children: [
+                    const Icon(Icons.alarm),
+                    const SizedBox(width: 8,),
+                    Text(expense.date.toString()),  
+
+                  ],)
               ],
             )
 
